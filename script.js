@@ -97,6 +97,42 @@ const projects = [
   },
 ];
 
+const extraTechnologies = [
+  "Python",
+  "React",
+  "Vite",
+  "C",
+  "C++",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Java",
+  "FastAPI",
+  "Uvicorn",
+  "Vercel",
+  "Git",
+  "GitHub",
+  "Vue",
+  "Firebase",
+  "Firestore",
+  "Supabase",
+  "MySQL",
+  "ESP32",
+  "ESP32-C6",
+  "ESP LilyGO",
+  "MQTT",
+  "JSON",
+  "Node-RED",
+  "n8n",
+  "Sensores",
+  "Analisis de datos",
+  "Pandas",
+  "NumPy",
+  "Chart.js",
+  "Hetzner",
+  "SQL Server",
+];
+
 const projectGrid = document.querySelector("#projectGrid");
 const techCloud = document.querySelector("#techCloud");
 
@@ -131,7 +167,9 @@ function renderProjects() {
 }
 
 function renderTechCloud() {
-  const techs = [...new Set(projects.flatMap((project) => project.technologies))].sort();
+  const techs = [
+    ...new Set([...projects.flatMap((project) => project.technologies), ...extraTechnologies]),
+  ].sort((a, b) => a.localeCompare(b, "es"));
   techCloud.innerHTML = techs.map((tech) => `<span class="tech-chip">${tech}</span>`).join("");
 }
 
