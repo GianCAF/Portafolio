@@ -65,7 +65,7 @@ const projects = [
     category: "Gestion + composta",
     summary:
       "Sistema para apoyar la gestion de un proyecto de composta en contexto academico, con enfoque en organizacion, seguimiento y claridad operativa.",
-    technologies: ["Gestion de proyectos", "Web app", "Composta", "Dashboard", "ITSOEH"],
+    technologies: ["Gestion de proyectos", "Web app", "Composta", "Dashboard"],
     accent: "#1f7a8c",
     initials: "GP",
     status: "Demo bajo contacto",
