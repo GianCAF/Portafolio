@@ -68,7 +68,7 @@ const projects = [
     technologies: ["Python", "OpenCV", "Game", "Detection", "Computer Vision"],
     accent: "#b64d7a",
     initials: "SD",
-    status: "For local execution, you can download it from my GitHub.",
+    status: "For local executions",
     url: "https://github.com/GianCAF/Snake_Deteccion_Puntos",
   },
   {
