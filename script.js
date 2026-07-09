@@ -2,37 +2,25 @@ const projects = [
   {
     name: "Sellix",
     period: "2026",
-    category: "Aplicacion web",
+    category: "Web Application",
     summary:
-      "Plataforma web tipo vitrina/comercio digital preparada para demostracion. El proyecto sigue en proceso; para ver una demo guiada, contacta conmigo.",
+      "A digital storefront/e-commerce web platform ready for demonstration. The project is ongoing; please contact me for a guided demo.",
     technologies: ["React", "Vercel", "JavaScript", "Frontend", "UI"],
     accent: "#0f7f65",
     initials: "SX",
-    status: "Demo bajo contacto",
+    status: "Demo upon request",
     url: "https://sellix-five.vercel.app/",
   },
   {
     name: "SC-Manager",
     period: "2026",
-    category: "Gestion",
+    category: "Management",
     summary:
-      "Sistema orientado a administrar informacion, procesos y recursos desde una interfaz centralizada para facilitar seguimiento y control.",
-    technologies: ["Web app", "JavaScript", "Gestion", "Dashboard", "Frontend"],
+      "A system designed to manage information, processes, and resources from a centralized interface for easy tracking and control.",
+    technologies: ["Web app", "JavaScript", "Management", "Dashboard", "Frontend", "Backend"],
     accent: "#355f9f",
     initials: "SC",
-    status: "En proceso de desarrollo",
-    url: "",
-  },
-  {
-    name: "Escuela_Bayesiana_LLM",
-    period: "2026",
-    category: "IA + educacion",
-    summary:
-      "Proyecto educativo que combina conceptos bayesianos con modelos de lenguaje para apoyar aprendizaje, explicaciones y exploracion guiada.",
-    technologies: ["LLM", "Python", "IA", "Educacion", "Probabilidad"],
-    accent: "#d85c4a",
-    initials: "EB",
-    status: "En proceso de desarrollo",
+    status: "Confidential",
     url: "",
   },
   {
@@ -40,60 +28,60 @@ const projects = [
     period: "2026",
     category: "E-commerce + IoT",
     summary:
-      "Version final de AquaSense como experiencia web de comercio y presentacion del producto, enfocada en mostrar la propuesta y facilitar la navegacion.",
-    technologies: ["React", "Vercel", "E-commerce", "AquaSense", "Responsive Design"],
+      "The final version of AquaSense as an e-commerce web experience and product presentation, focused on showcasing the value proposition and facilitating navigation.",
+    technologies: ["React", "Vercel", "E-commerce", "AquaSense", "Responsive Design", "Firebase"],
     accent: "#c18a17",
     initials: "AQ",
-    status: "Publicado",
+    status: "Published",
     url: "https://e-comerce-aquasense-vfinal.vercel.app/",
   },
   {
     name: "SmileFlow",
     period: "2026",
-    category: "Salud + gestion",
+    category: "Health + Management",
     summary:
-      "Aplicacion pensada para organizar flujos de atencion, seguimiento o gestion en un entorno relacionado con servicios dentales.",
-    technologies: ["Web app", "Frontend", "Gestion", "UX", "JavaScript"],
+      "An application designed to organize workflows, tracking, or management within an environment related to dental services.",
+    technologies: ["Web app", "Frontend", "Backend", "Management", "UX", "JavaScript", "React", "Firebase"],
     accent: "#6d5fb8",
     initials: "SF",
-    status: "En proceso de desarrollo",
+    status: "In development",
     url: "",
   },
   {
     name: "Gestion-Proyectos-ITSOEH",
     period: "2026",
-    category: "Gestion + composta",
+    category: "Management + Composting",
     summary:
-      "Sistema para apoyar la gestion de un proyecto de composta en contexto academico, con enfoque en organizacion, seguimiento y claridad operativa.",
-    technologies: ["Gestion de proyectos", "Web app", "Composta", "Dashboard"],
+      "A system to support the management of a composting project within an academic context, with a focus on organization, tracking, and operational clarity.",
+    technologies: ["Project Management", "Web app", "Composting", "Dashboard"],
     accent: "#1f7a8c",
     initials: "GP",
-    status: "Demo bajo contacto",
-    url: "https://gestion-proyectos-itsoeh-v1.vercel.app/",
+    status: "Demo upon request",
+    url: "",
   },
   {
     name: "Snake_Deteccion_Puntos",
     period: "2026",
-    category: "Juego + vision",
+    category: "Game + Vision",
     summary:
-      "Version experimental de Snake enfocada en deteccion de puntos, logica de juego e interaccion para practicar procesamiento y control visual.",
-    technologies: ["Python", "OpenCV", "Juego", "Deteccion", "Computer Vision"],
+      "An experimental version of Snake focused on point detection, game logic, and interaction to practice computer vision processing and control.",
+    technologies: ["Python", "OpenCV", "Game", "Detection", "Computer Vision"],
     accent: "#b64d7a",
     initials: "SD",
-    status: "En proceso de desarrollo",
-    url: "",
+    status: "For local execution, you can download it from my GitHub.",
+    url: "https://github.com/GianCAF/Snake_Deteccion_Puntos",
   },
   {
     name: "Snake_Multijugador",
     period: "2026",
-    category: "Juego",
+    category: "Game",
     summary:
-      "Adaptacion multijugador de Snake con mecanicas competitivas, control de jugadores y logica de tablero para partidas compartidas.",
-    technologies: ["JavaScript", "Game Logic", "Multijugador", "Canvas", "Frontend"],
+      "A multiplayer adaptation of Snake featuring competitive mechanics, player controls, and board logic for shared matches.",
+    technologies: ["JavaScript", "Game Logic", "Multiplayer", "Canvas", "Frontend"],
     accent: "#27745f",
     initials: "SM",
-    status: "En proceso de desarrollo",
-    url: "",
+    status: "For local execution, you can download it from my GitHub.",
+    url: "https://github.com/GianCAF/Snake_Multijugador",
   },
 ];
 
@@ -124,8 +112,8 @@ const extraTechnologies = [
   "JSON",
   "Node-RED",
   "n8n",
-  "Sensores",
-  "Analisis de datos",
+  "Sensors",
+  "Data Analysis",
   "Pandas",
   "NumPy",
   "Chart.js",
@@ -141,7 +129,7 @@ function renderProjects() {
     .map((project) => {
       const isReady = Boolean(project.url);
       const action = isReady
-        ? `<a class="button project-link ready" href="${project.url}" target="_blank" rel="noreferrer">Abrir proyecto</a>`
+        ? `<a class="button project-link ready" href="${project.url}" target="_blank" rel="noreferrer">Open project</a>`
         : `<button class="button project-link" type="button" disabled>${project.status}</button>`;
 
       return `
@@ -153,10 +141,10 @@ function renderProjects() {
           <h3>${project.name}</h3>
           <p class="project-summary">${project.summary}</p>
           <ul class="project-meta">
-            <li><strong>Periodo</strong><span>${project.period}</span></li>
+            <li><strong>Timeline</strong><span>${project.period}</span></li>
             <li><strong>Area</strong><span>${project.category}</span></li>
           </ul>
-          <div class="tag-list" aria-label="Tecnologias de ${project.name}">
+          <div class="tag-list" aria-label="${project.name} technologies">
             ${project.technologies.map((tech) => `<span class="tag">${tech}</span>`).join("")}
           </div>
           <div class="card-actions">${action}</div>
@@ -169,7 +157,7 @@ function renderProjects() {
 function renderTechCloud() {
   const techs = [
     ...new Set([...projects.flatMap((project) => project.technologies), ...extraTechnologies]),
-  ].sort((a, b) => a.localeCompare(b, "es"));
+  ].sort((a, b) => a.localeCompare(b, "en"));
   techCloud.innerHTML = techs.map((tech) => `<span class="tech-chip">${tech}</span>`).join("");
 }
 

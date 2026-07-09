@@ -1,100 +1,95 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio de proyectos</title>
-    <meta
-      name="description"
-      content="Pagina de proyectos con resumen, periodo, tecnologias y estado de desarrollo."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark">G</span>
-        <span>Proyectos</span>
-      </a>
-      <nav class="nav-links" aria-label="Navegacion principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#tecnologias">Tecnologias</a>
-      </nav>
-    </header>
+<html lang="en">
 
-    <main>
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <img
-          class="hero-media"
-          src="assets/project-hero.png"
-          alt="Escritorio tecnologico con laptop, tarjetas de datos y prototipo electronico"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Portafolio personal</p>
-          <h1 id="hero-title">Proyectos de software, datos e IoT</h1>
-          <p class="hero-copy">
-            Una seleccion de proyectos desarrollados para practicar, resolver problemas reales
-            y construir experiencias web funcionales con enfoque tecnico.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#proyectos">Ver proyectos</a>
-            <a class="button secondary" href="https://github.com/GianCAF" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Portfolio</title>
+  <meta name="description"
+    content="Project page featuring summaries, timelines, technologies, and development status." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Go to home">
+      <span class="brand-mark">G</span>
+      <span>Projects</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#proyectos">Projects</a>
+      <a href="#tecnologias">Technologies</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/project-hero.png"
+        alt="Tech desk with a laptop, data boards, and an electronic prototype" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Personal Portfolio</p>
+        <h1 id="hero-title">Software, Data & IoT Projects</h1>
+        <p class="hero-copy">
+          A curated selection of projects developed to practice, solve real-world problems,
+          and build functional web experiences with a technical focus.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">View Projects</a>
+          <a class="button secondary" href="https://github.com/GianCAF" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="intro-band" aria-label="Resumen">
-        <div class="intro-grid">
-          <article>
-            <span class="metric">8</span>
-            <p>Proyectos documentados</p>
-          </article>
-          <article>
-            <span class="metric">Web</span>
-            <p>Interfaces, PWAs y dashboards</p>
-          </article>
-          <article>
-            <span class="metric">IoT</span>
-            <p>Sensores, gateways y conectividad</p>
-          </article>
-        </div>
-      </section>
+    <section class="intro-band" aria-label="Summary">
+      <div class="intro-grid">
+        <article>
+          <span class="metric">8</span>
+          <p>Documented projects</p>
+        </article>
+        <article>
+          <span class="metric">Web</span>
+          <p>Interfaces, PWAs, and dashboards</p>
+        </article>
+        <article>
+          <span class="metric">IoT</span>
+          <p>Sensors, gateways, and connectivity</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="section" id="proyectos">
-        <div class="section-heading">
-          <p class="eyebrow">Trabajo reciente</p>
-          <h2>Proyectos</h2>
-          <p>
-            Cada tarjeta incluye objetivo, periodo, tecnologias utilizadas y estado actual.
-          </p>
-        </div>
+    <section class="section" id="proyectos">
+      <div class="section-heading">
+        <p class="eyebrow">Recent Work</p>
+        <h2>Projects</h2>
+        <p>
+          Each card includes the objective, timeline, technologies used, and current status.
+        </p>
+      </div>
 
-        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
-      </section>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+    </section>
 
-      <section class="tech-section" id="tecnologias">
-        <div class="section-heading">
-          <p class="eyebrow">Stack</p>
-          <h2>Tecnologias usadas</h2>
-          <p>
-            El portafolio agrupa tecnologias de frontend, analisis de datos, sistemas embebidos
-            y bases de datos.
-          </p>
-        </div>
-        <div class="tech-cloud" id="techCloud"></div>
-      </section>
+    <section class="tech-section" id="tecnologias">
+      <div class="section-heading">
+        <p class="eyebrow">Stack</p>
+        <h2>Technologies Used</h2>
+        <p>
+          This portfolio highlights technologies spanning frontend, data analysis, embedded systems,
+          and databases.
+        </p>
+      </div>
+      <div class="tech-cloud" id="techCloud"></div>
+    </section>
 
-    </main>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
