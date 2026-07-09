@@ -80,7 +80,7 @@ const projects = [
     technologies: ["JavaScript", "Game Logic", "Multiplayer", "Canvas", "Frontend"],
     accent: "#27745f",
     initials: "SM",
-    status: "For local execution, you can download it from my GitHub.",
+    status: "For local execution",
     url: "https://github.com/GianCAF/Snake_Multijugador",
   },
 ];
